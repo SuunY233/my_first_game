@@ -46,7 +46,3 @@ texture={
 "roughness/mode": 0,
 "roughness/src_normal": ""
 }
-
-[rendering]
-
-viewport/hdr_2d=true

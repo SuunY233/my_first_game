@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://d2ldvpmxfxrty"]
+[gd_scene load_steps=11 format=3 uid="uid://d2ldvpmxfxrty"]
 
 [ext_resource type="PackedScene" uid="uid://b7l0x8uhintra" path="res://Player/player.tscn" id="1_f3sb7"]
 [ext_resource type="Script" uid="uid://bsksxcktpc577" path="res://World/world.gd" id="1_tlwt5"]
@@ -277,46 +277,56 @@ sources/0 = SubResource("TileSetAtlasSource_dwbse")
 sources/1 = SubResource("TileSetAtlasSource_ioo17")
 
 [node name="World" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_tlwt5")
 
-[node name="Background" type="Sprite2D" parent="."]
-texture_repeat = 2
-scale = Vector2(0.5, 0.51111114)
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(320, 192)
+
+[node name="GrassBackGround" type="TextureRect" parent="Parallax2D"]
+offset_right = 320.0
+offset_bottom = 192.0
 texture = ExtResource("2_aqk2v")
-centered = false
-region_enabled = true
-region_rect = Rect2(0, 0, 640, 360)
+stretch_mode = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAAAAAgAAAABAAAAAAABAAgAAAABAAAAAAACAAgAAAABAAAAAAADAAgAAAABAAAAAAAEAAgAAAABAAAAAAAFAAgAAAABAAAAAAAGAAgAAAABAAAAAAAHAAgAAAABAAAAAAAIAAgAAAABAAAAAAAJAAgAAAABAAAAAAAKAAgAAAABAAAAAAALAAgAAAABAAEAAAAMAAgAAAABAAEAAAANAAgAAAABAAAAAAAOAAgAAAABAAAAAAAPAAgAAAABAAAAAAAQAAgAAAABAAAAAAARAAgAAAABAAAAAAASAAgAAAABAAAAAAASAAkAAAABAAIAAAARAAkAAAABAAEAAAAQAAkAAAABAAEAAAAPAAkAAAABAAIAAAANAAkAAAABAAIAAAAMAAkAAAABAAEAAAALAAkAAAABAAEAAAAKAAkAAAABAAIAAAAJAAkAAAABAAIAAAAIAAkAAAABAAIAAAAHAAkAAAABAAIAAAAGAAkAAAABAAIAAAAFAAkAAAABAAIAAAAEAAkAAAABAAIAAAADAAkAAAABAAIAAAACAAkAAAABAAIAAAABAAkAAAABAAIAAAAAAAkAAAABAAIAAAALAAAAAAAAAAEAAAALAAEAAAAAAAEAAAALAAIAAAAAAAEAAAALAAMAAAAAAAEAAAALAAQAAAAAAAEAAAALAAUAAAAAAAEAAAALAAYAAAAAAAEAAAALAAcAAAAAAAEAAAAMAAAAAAACAAEAAAAMAAEAAAACAAEAAAAMAAIAAAACAAEAAAAMAAMAAAACAAEAAAAMAAQAAAACAAEAAAAMAAUAAAACAAEAAAAMAAYAAAACAAEAAAAMAAcAAAACAAEAAAALAP//AAAAAAAAAAAMAP//AAACAAAAAAD//wgAAAAAAAAAAAD//wkAAAAAAAIAAAAOAAkAAAABAAIAAAATAAgAAAABAAAAAAATAAkAAAABAAIAAAAUAAgAAAACAAAAAAAUAAkAAAACAAIAAAALAAoAAAAAAAEAAAALAAsAAAAAAAIAAAAMAAsAAAACAAIAAAAMAAoAAAACAAEAAAA=")
 tile_set = SubResource("TileSet_aqk2v")
 
 [node name="Player" parent="." instance=ExtResource("1_f3sb7")]
 position = Vector2(72, 40)
 
 [node name="Bush" parent="." instance=ExtResource("2_fj7yv")]
-position = Vector2(88, 120)
+position = Vector2(120, 176)
 
 [node name="Bush3" parent="." instance=ExtResource("2_fj7yv")]
-position = Vector2(296, 56)
+position = Vector2(288, 144)
+
+[node name="Bush4" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(264, 280)
+
+[node name="Bush6" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(560, 96)
 
 [node name="Bush5" parent="." instance=ExtResource("2_fj7yv")]
-position = Vector2(32, 66)
+position = Vector2(40, 96)
 
 [node name="Tree" parent="." instance=ExtResource("7_pkg7o")]
-position = Vector2(160, 120)
+position = Vector2(464, 272)
 
 [node name="Tree2" parent="." instance=ExtResource("7_pkg7o")]
-position = Vector2(280, 168)
+position = Vector2(176, 88)
 
 [node name="Tree3" parent="." instance=ExtResource("7_pkg7o")]
-position = Vector2(224, 120)
+position = Vector2(408, 114)
+
+[node name="Tree6" parent="." instance=ExtResource("7_pkg7o")]
+position = Vector2(600, 224)
 
 [node name="Tree4" parent="." instance=ExtResource("7_pkg7o")]
-position = Vector2(136, 48)
+position = Vector2(208, 232)
 
 [node name="Tree5" parent="." instance=ExtResource("7_pkg7o")]
-position = Vector2(40, 168)
+position = Vector2(80, 248)
 
 [node name="Tree7" parent="." instance=ExtResource("7_pkg7o")]
-position = Vector2(120, 58)
+position = Vector2(224, 224)

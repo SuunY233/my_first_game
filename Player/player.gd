@@ -32,7 +32,7 @@ func process_move_state(delta: float) -> void:
 	move_and_slide()
 
 func process_roll_state(delta: float) -> void:
-	velocity = last_input_dir * ROLL_SPEED
+	velocity = last_input_dir.normalized() * ROLL_SPEED
 	move_and_slide()
 
 func update_blend_position(input_dir: Vector2) -> void:

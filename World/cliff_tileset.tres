@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://kly55uf7w4ts"]
+[gd_resource type="TileSet" format=3 uid="uid://kly55uf7w4ts"]
 
 [ext_resource type="Texture2D" uid="uid://c7vxkjby24eui" path="res://World/CliffTileset.png" id="1_m4xoq"]
 

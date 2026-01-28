@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://b7l0x8uhintra"]
+[gd_scene format=3 uid="uid://b7l0x8uhintra"]
 
 [ext_resource type="Script" uid="uid://b05h7srm2kpiu" path="res://Player/player.gd" id="1_4ntmi"]
 [ext_resource type="Texture2D" uid="uid://c0nj55snfrx0m" path="res://Player/Player.png" id="2_btcbx"]
@@ -24,6 +24,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [36, 37, 38, 39]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [PackedVector2Array(6, -5, 17, -5, 18, -4, 18, -3, 17, -2, 6, -2), PackedVector2Array(-4, 8, -3, 8, -3, 9, 7, 9, 10, 8, 13, 7, 14, 5, 15, 3, 16, 3, 16, 8, 15, 11, 12, 16, 7, 20, 1, 21, 1, 22, -3, 22, -3, 21, -4, 21), PackedVector2Array(-10, 3, -4, 9, 0, 11, 7, 12, 10, 10, 14, 7, 15, 5, 16, 8, 12, 16, 7, 20, 1, 21, -4, 22, -14, 18, -19, 12, -20, 8, -15, 5), PackedVector2Array(-10, -5, -9, -3, -9, -2, -13, -2, -16, 1, -17, 4, -15, 6, -15, 7, -18, 6, -20, 4, -22, 0, -22, -4, -21, -5), PackedVector2Array()]
+}
 
 [sub_resource type="Animation" id="Animation_p5o4e"]
 resource_name = "AttackLeft"
@@ -40,6 +52,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [32, 33, 34, 35]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [PackedVector2Array(-2, -18, -2, -24, -1, -24, -1, -25, 0, -25, 0, -24, 1, -24, 1, -18), PackedVector2Array(-11, -3, -12, -1, -26, -1, -25, -10, -21, -16, -15, -19, -7, -21, -3, -21, -2, -19, -8, -16, -11, -10, -11, -6), PackedVector2Array(-6, -20, -13, -16, -16, -8, -13, -3, -6, -1, -3, 0, -5, 7, -8, 12, -17, 9, -23, 5, -25, 2, -26, -1, -26, -7, -21, -16, -15, -19), PackedVector2Array(3, 2, 3, 12, 2, 13, -8, 12, -12, 10, -10, 9, -6, 10, -4, 8, -1, 5, 0, 2), PackedVector2Array()]
 }
 
 [sub_resource type="Animation" id="Animation_apopc"]
@@ -58,6 +82,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [24, 25, 26, 27]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [PackedVector2Array(0, -25, 1, -25, 1, -24, 2, -24, 2, -18, 0, -17, -1, -17, -1, -24), PackedVector2Array(12, -1, 26, -1, 26, -7, 21, -16, 12, -20, 3, -21, 2, -19, 4, -18, 9, -14, 11, -10, 12, -6, 11, -5, 11, -3, 12, -2), PackedVector2Array(8, 12, 19, 7, 25, -1, 25, -10, 21, -16, 12, -20, 6, -20, 12, -17, 16, -8, 13, -3, 7, -1, 4, -1, 3, 3, 5, 7), PackedVector2Array(-3, 12, -3, 2, 0, 2, 0, 5, 4, 8, 7, 10, 10, 9, 12, 9, 11, 11, 3, 12, -2, 13), PackedVector2Array()]
+}
 
 [sub_resource type="Animation" id="Animation_5htga"]
 resource_name = "AttackUp"
@@ -74,6 +110,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [28, 29, 30, 31]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [PackedVector2Array(-9, -9, -20, -9, -21, -8, -21, -7, -20, -6, -9, -6, -9, -8), PackedVector2Array(1, -26, 1, -17, -2, -17, -4, -18, -7, -19, -7, -15, -14, -12, -20, -5, -19, -11, -14, -21, -8, -26, -3, -27), PackedVector2Array(9, -9, 19, -14, 12, -23, 3, -27, -10, -25, -17, -18, -18, -15, -17, -14, -11, -19, -2, -20, 1, -18, 2, -17, 6, -18, 6, -13, 7, -11), PackedVector2Array(10, -4, 20, -4, 21, -12, 18, -18, 15, -20, 16, -12, 14, -9, 10, -7), PackedVector2Array()]
 }
 
 [sub_resource type="Animation" id="Animation_x3vf3"]
@@ -161,6 +209,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array()]
 }
 
 [sub_resource type="Animation" id="Animation_b1ygp"]
@@ -462,32 +522,32 @@ transitions = ["Start", "MoveState", SubResource("AnimationNodeStateMachineTrans
 graph_offset = Vector2(-11, -104)
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_4ntmi"]
+graph_offset = Vector2(0.83947754, -5.475464)
 nodes/output/position = Vector2(520, 146.66667)
 nodes/StateMachine/node = SubResource("AnimationNodeStateMachine_4ntmi")
 nodes/StateMachine/position = Vector2(200, 133.33333)
 node_connections = [&"output", 0, &"StateMachine"]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" unique_id=946850822]
 motion_mode = 1
 script = ExtResource("1_4ntmi")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1955955859]
 position = Vector2(0, -8)
 texture = ExtResource("2_btcbx")
 hframes = 60
 frame = 1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2027651970]
 position = Vector2(-1, 1)
 rotation = -1.5707964
 shape = SubResource("CapsuleShape2D_tlwt5")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_gwnis")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1307587464]
+libraries/ = SubResource("AnimationLibrary_gwnis")
 
-[node name="AnimationTree" type="AnimationTree" parent="."]
+[node name="AnimationTree" type="AnimationTree" parent="." unique_id=264204377]
+callback_mode_discrete = 1
 tree_root = SubResource("AnimationNodeBlendTree_4ntmi")
 advance_expression_base_node = NodePath("..")
 anim_player = NodePath("../AnimationPlayer")
@@ -496,11 +556,15 @@ parameters/StateMachine/MoveState/IdleState/blend_position = Vector2(0, 0.103999
 parameters/StateMachine/MoveState/RunState/blend_position = Vector2(0, 0)
 parameters/StateMachine/RollState/blend_position = Vector2(0, 0)
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1129240964]
 process_callback = 0
 position_smoothing_enabled = true
 
-[node name="ShadowSprite2D" type="Sprite2D" parent="."]
+[node name="ShadowSprite2D" type="Sprite2D" parent="." unique_id=966381021]
 show_behind_parent = true
 position = Vector2(-1, 2)
 texture = ExtResource("3_btcbx")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1828920191]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=2015768376]
